@@ -13,7 +13,7 @@ This is a React project replicating the Paper Airplanes website. Paper Airplanes
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/yourusername/paper-airplanes-react.git
+   https://github.com/MastooraTurkmen/Paper-Airplanes-Project.git
    ```
 
 2. Navigate to the project directory:
