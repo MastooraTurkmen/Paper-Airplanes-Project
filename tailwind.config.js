@@ -1,8 +1,15 @@
-/** @type {import('tailwindcss').Config} */
+// /** @type {import('tailwindcss').Config} */
+import { fontFamily } from "tailwindcss/defaultTheme";
+
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        pop: ["var(--font-sora)", ...fontFamily.sans],
+
+      },
+    },
   },
   plugins: [],
 };
