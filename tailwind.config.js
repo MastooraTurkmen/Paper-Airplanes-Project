@@ -7,9 +7,10 @@ export default {
     extend: {
       fontFamily: {
         pop: ["var(--font-sora)", ...fontFamily.sans],
-
       },
     },
   },
-  plugins: [],
+  plugins: [
+    require('daisyui'),
+  ],
 };
