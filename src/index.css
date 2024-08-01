@@ -6,6 +6,7 @@
 
 :root {
   --font-pop: "Poppins", sans-serif;
+  color-scheme: dark;
 }
 
 * {
