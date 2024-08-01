@@ -1,30 +1,83 @@
-import React from 'react'
-import { navigation } from '../constants'
-import { useLocation } from 'react-router-dom';
+import React from "react";
+import { navigation } from "../constants";
+import { useLocation } from "react-router-dom";
 
 const Navbar = () => {
   const pathname = useLocation();
 
   return (
-    <div className='font-pop bg-black w-full px-10 py-10 flex justify-between items-center'>
-      <div><h1 className='text-white font-pop font-semibold text-4xl'>Paper Airplanes</h1></div>
-      <div className={`nav-items hidden lg:flex top-0 transition-all max-lg:pt-10 left-0 max-lg:flex-col items-center max-lg:min-h-screen max-lg:w-full max-lg:absolute lg:relative lg:flex-row justify-evenly gap-5 font-light lg:font-lg text-3xl lg:text-2xl tracking-wider text-white`}>
-        {navigation.map((item) => (
-          <a
-            id="menuItems"
-            key={item.id}
-            href={item.url}
-            className={`font-pop overflow-hidden ${
-              item.url == pathname.hash ? "z-2 text-white" : "text-white/70"
-            }`}
+    <div className="navbar font-pop bg-[#1D1E2F] w-full px-10 lg:px-20 flex justify-between items-center">
+      <div className="navbar-start">
+        <div className="dropdown">
+          <div
+            tabIndex={0}
+            role="button"
+            className="btn bg-[#E87900] border-none btn-circle lg:hidden"
           >
-            {item.title}
-          </a>
-        ))}
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M4 6h16M4 12h8m-8 6h16"
+              />
+            </svg>
+          </div>
+          <ul
+            tabIndex={0}
+            className="menu menu-sm dropdown-content bg-[#1D1E2F] rounded-md z-[1] mt-3 w-52 p-2 shadow"
+          >
+            <li>
+              {navigation.map((item) => (
+                <a
+                  id="menuItems"
+                  key={item.id}
+                  href={item.url}
+                  className={`font-pop overflow-hidden ${
+                    item.url == pathname.hash
+                      ? "z-2 text-white"
+                      : "text-white/70"
+                  }`}
+                >
+                  {item.title}
+                </a>
+              ))}
+            </li>
+          </ul>
+        </div>
+        <a className="text-white text-lg lg:text-xl font-semibold ml-2">Paper Airplanes</a>
       </div>
-      <div><button className='py-3 px-4 text-white font-light bg-orange-500 border-none rounded-full text-3xl lg:text-2xl'>Register</button></div>
+      <div className="navbar-center hidden lg:flex">
+        <ul className="menu menu-horizontal px-1">
+          {navigation.map((item) => (
+            <li>
+              <a
+                id="menuItems"
+                key={item.id}
+                href={item.url}
+                className={`font-pop overflow-hidden ${
+                  item.url == pathname.hash ? "z-2 text-white" : "text-white/70"
+                }`}
+              >
+                {item.title}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+      <div className="navbar-end">
+        <a className="bg-[#E87900] border-none text-white rounded-full text-sm font-pop px-3 py-1">
+          Register
+        </a>
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;
