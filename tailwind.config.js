@@ -1,4 +1,6 @@
-/** @type {import('tailwindcss').Config} */
+// /** @type {import('tailwindcss').Config} */
+import { fontFamily } from "tailwindcss/defaultTheme";
+
 export default {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
@@ -7,4 +9,9 @@ export default {
     },
   },
   plugins: [require('daisyui')],
+      fontFamily: {
+        pop: ["var(--font-sora)", ...fontFamily.sans],
+      },
+    },
+  },
 };
