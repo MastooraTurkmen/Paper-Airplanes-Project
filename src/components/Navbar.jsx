@@ -1,81 +1,117 @@
-import React from "react";
-import { navigation } from "../constants";
-import { useLocation } from "react-router-dom";
+import React, { useState, useEffect, useCallback } from 'react';
+import { navigation } from '../constants';
+import { useLocation } from 'react-router-dom';
+import Button from './Button';
+import menuIcon from '/icons/menu.svg';
+import closeIcon from '/icons/close.svg';
 
 const Navbar = () => {
-  const pathname = useLocation();
+  const [menuOpen, setMenuOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+  const { pathname } = useLocation();
+
+  {
+    /* Handle Menu Toggle */
+  }
+  const handleMenuToggle = () => {
+    setMenuOpen((prev) => !prev);
+  };
+
+  {
+    /* Handle Close menu when clicked a link */
+  }
+  const handleCloseMenu = () => {
+    setMenuOpen(false);
+  };
+
+  {
+    /* Handle Scroll effect */
+  }
+  const handleScroll = () => {
+    setScrolled(window.scrollY > 50);
+  };
+
+  {
+    /* Handle window scroll event  */
+  }
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [handleScroll]);
+
+  const navLinkClass = (url) =>
+    `overflow-hidden ${
+      url === pathname.pathname ? 'text-white' : 'text-white/70'
+    }`;
 
   return (
-    <div className="navbar font-pop w-full px-10 lg:px-20 flex justify-between items-center">
-      <div className="navbar-start">
-        <div className="dropdown">
-          <div
-            tabIndex={0}
-            role="button"
-            className="btn bg-[#E87900] border-none btn-circle lg:hidden"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-5 w-5"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M4 6h16M4 12h8m-8 6h16"
-              />
-            </svg>
-          </div>
-          <ul
-            tabIndex={0}
-            className="menu menu-sm dropdown-content bg-[#1D1E2F] rounded-md z-[1] mt-3 w-52 p-2 shadow"
-          >
-            <li>
-              {navigation.map((item) => (
-                <a
-                  id="menuItems"
-                  key={item.id}
-                  href={item.url}
-                  className={`font-pop overflow-hidden ${
-                    item.url == pathname.hash
-                      ? "z-2 text-white"
-                      : "text-white/70"
-                  }`}
-                >
-                  {item.title}
-                </a>
-              ))}
-            </li>
-          </ul>
-        </div>
-        <a className="text-white text-lg lg:text-xl font-semibold ml-2">Paper Airplanes</a>
+    <header
+      className={`navbar border-gray-800 w-full lg:px-16 flex justify-between items-center fixed z-[999] transition-colors duration-300 ${
+        scrolled ? 'bg-primary border-b' : 'bg-transparent'
+      }`}
+    >
+      {/* Logo */}
+      <div className="navbar-start z-20">
+        <a className="text-white text-lg lg:text-xl font-semibold ml-2">
+          Paper Airplanes
+        </a>
       </div>
-      <div className="navbar-center hidden lg:flex">
+
+      {/* Desktop menu */}
+      <div className="navbar-center hidden md:flex">
         <ul className="menu menu-horizontal px-1">
           {navigation.map((item) => (
             <li key={item.id}>
-              <a
-                id="menuItems"
-                href={item.url}
-                className={`font-pop overflow-hidden ${
-                  item.url == pathname.hash ? "z-2 text-white" : "text-white/70"
-                }`}
-              >
+              <a href={item.url} className={navLinkClass(item.url)}>
                 {item.title}
               </a>
             </li>
           ))}
         </ul>
       </div>
+
+      {/* Register Button */}
       <div className="navbar-end">
-        <a className="bg-[#E87900] border-none text-white rounded-full text-sm font-pop px-3 py-1">
+        <Button className="bg-secondary lg:text-sm text-white hidden md:block">
           Register
-        </a>
+        </Button>
+
+        <div
+          className="h-10 w-10 md:hidden flex justify-center items-center z-20 cursor-pointer"
+          onClick={handleMenuToggle}
+          aria-label="Toggle menu"
+        >
+          <img
+            src={menuOpen ? closeIcon : menuIcon}
+            alt={menuOpen ? 'Close menu' : 'Open menu'}
+          />
+        </div>
       </div>
-    </div>
+
+      {/* Mobile Menu */}
+      {menuOpen && (
+        <div className="fixed top-0 left-0 bottom-0 right-0 flex flex-col justify-center items-center bg-primary z-10 md:hidden">
+          <ul className="flex flex-col w-full px-10 gap-6">
+            {navigation.map((item) => (
+              <li key={item.id}>
+                <a
+                  onClick={handleCloseMenu}
+                  href={item.url}
+                  className={`text-lg ${navLinkClass(item.url)}`}
+                >
+                  {item.title}
+                </a>
+              </li>
+            ))}
+            <Button className="bg-secondary text-white !text-lg w-full">
+              Register
+            </Button>
+          </ul>
+        </div>
+      )}
+    </header>
   );
 };
 
