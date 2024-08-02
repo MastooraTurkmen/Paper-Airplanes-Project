@@ -5,13 +5,7 @@ import hatIcon from '/icons/hat.svg';
 import boxIcon from '/icons/box-shape.svg';
 import starIcon from '/icons/star.svg';
 import blurredIcon from '/icons/blurred-shape.svg';
-
-// Button Component | Must be seperated later
-const Button = ({ children, className }) => (
-  <button className={`text-xs py-2 px-5 rounded-full ${className} lg:text-lg`}>
-    {children}
-  </button>
-);
+import Button from './Button';
 
 // InfoItem Component
 const InfoItem = ({ value, label }) => (
