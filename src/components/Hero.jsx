@@ -45,30 +45,30 @@ function HeroSection() {
             className="absolute w-3 -top-5 left-10 md:w-5"
             alt=""
           />
-          <h1 className="text-xl font-bold sm:text-3xl md:text-4xl lg:text-7xl text-transparent bg-clip-text bg-gradient-to-br from-white to-white/50">
+          <h1 className="text-3xl font-bold sm:text-3xl md:text-4xl lg:text-7xl text-transparent bg-clip-text bg-gradient-to-br from-white to-white/50">
             Unlock Your Potential With <br /> World-Class{' '}
             <span className="text-secondary">Education</span>
           </h1>
 
           <img
             src={wavyIcon}
-            className="absolute right-0 top-10 md:w-14 lg:w-20 lg:right-10"
-            alt=""
+            className="absolute right-5 top-14 md:w-14 lg:w-20 lg:right-10"
+            alt="wavy"
           />
           <img
             src={hatIcon}
-            className="absolute left-0 w-7 -bottom-10 md:w-16"
-            alt=""
+            className="absolute left-8 w-7 bottom-0 md:w-16"
+            alt="small hat"
           />
 
-          <p className="text-[9.5px] mt-4 sm:text-sm md:text-lg text-gray-400 leading-5">
+          <p className="text-[10.5px] mt-4 sm:text-sm md:text-lg text-white leading-5">
             Join our vibrant community of learners and access a wide range of{' '}
             <br />
             courses designed to inspire and empower you
           </p>
           <img
             src={boxIcon}
-            className="absolute right-0 -bottom-20 md:w-7"
+            className="absolute right-10 -bottom-20 md:w-7"
             alt=""
           />
         </div>
@@ -82,12 +82,12 @@ function HeroSection() {
         </div>
 
         {/* Infos */}
-        <div className="flex justify-center items-center gap-2 mt-16">
+        <div className="flex justify-center text-5xl items-center text-white gap-2 mt-16">
           {infoData.map((info, index) => (
             <React.Fragment key={index}>
               <InfoItem value={info.value} label={info.label} />
               {index < infoData.length - 1 && (
-                <div className="w-px h-6 bg-gray-600 mx-4"></div>
+                <div className="w-px h-8 bg-gray-600 mx-4"></div>
               )}
             </React.Fragment>
           ))}
