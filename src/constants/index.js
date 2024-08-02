@@ -1,4 +1,4 @@
-import { unesco, who, netflix, garten, babylov } from "../assets";
+import { unesco, who, netflix, garten, baby } from "../assets/index";
 
 export const navigation = [
   {
@@ -47,7 +47,7 @@ export const companies = [
   {
     id: "2",
     title: "Netflix",
-    src: unesco,
+    src: netflix,
   },
   {
     id: "3",
@@ -57,6 +57,6 @@ export const companies = [
   {
     id: "4",
     title: "Babylov",
-    src: babylov,
+    src: baby,
   },
 ];
