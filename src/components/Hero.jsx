@@ -26,7 +26,7 @@ function HeroSection() {
   return (
     <main className="bg-primary flex h-screen overflow-hidden">
       {/* Hero Content */}
-      <section className="container mx-auto pt-20 px-2 text-center text-white relative">
+      <section className="container mx-auto pt-40 px-2 text-center text-white relative">
         <img
           src={blurredIcon}
           className="absolute w-96 -top-9 -left-20 sm:left-20"
