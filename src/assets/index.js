@@ -1,8 +1,8 @@
-import baby from "./babylov.svg";
-import garten from "./garten.svg";
-import netflix from "./netflix.svg";
-import unesco from "./unesco.svg";
-import who from "./who.svg";
+import baby from "./companies-logo/babylov.svg";
+import garten from "./companies-logo/garten.svg";
+import netflix from "./companies-logo/netflix.svg";
+import unesco from "./companies-logo/unesco.svg";
+import who from "./companies-logo/who.svg";
 
 export {
     baby,
