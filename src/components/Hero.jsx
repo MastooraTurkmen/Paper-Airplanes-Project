@@ -5,13 +5,7 @@ import hatIcon from '/icons/hat.svg';
 import boxIcon from '/icons/box-shape.svg';
 import starIcon from '/icons/star.svg';
 import blurredIcon from '/icons/blurred-shape.svg';
-
-// Button Component | Must be seperated later
-const Button = ({ children, className }) => (
-  <button className={`text-xs py-2 px-5 rounded-full ${className} lg:text-lg`}>
-    {children}
-  </button>
-);
+import Button from './Button';
 
 // InfoItem Component
 const InfoItem = ({ value, label }) => (
@@ -32,7 +26,7 @@ function HeroSection() {
   return (
     <main className="bg-primary flex h-screen overflow-hidden">
       {/* Hero Content */}
-      <section className="container mx-auto pt-20 px-2 text-center text-white relative">
+      <section className="container mx-auto pt-40 px-2 text-center text-white relative">
         <img
           src={blurredIcon}
           className="absolute w-96 -top-9 -left-20 sm:left-20"
