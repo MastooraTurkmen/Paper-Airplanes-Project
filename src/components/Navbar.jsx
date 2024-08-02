@@ -6,7 +6,7 @@ const Navbar = () => {
   const pathname = useLocation();
 
   return (
-    <div className="navbar font-pop bg-[#1D1E2F] w-full px-10 lg:px-20 flex justify-between items-center">
+    <div className="navbar font-pop w-full px-10 lg:px-20 flex justify-between items-center">
       <div className="navbar-start">
         <div className="dropdown">
           <div
@@ -56,10 +56,9 @@ const Navbar = () => {
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
           {navigation.map((item) => (
-            <li>
+            <li key={item.id}>
               <a
                 id="menuItems"
-                key={item.id}
                 href={item.url}
                 className={`font-pop overflow-hidden ${
                   item.url == pathname.hash ? "z-2 text-white" : "text-white/70"
