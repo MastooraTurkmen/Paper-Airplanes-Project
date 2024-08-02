@@ -1,5 +1,10 @@
+import Navbar from "./components/Navbar";
+
 const App = () => {
   return (
+    <div className="text-3xl text-center">
+      <Navbar />
+    </div>
     <div className="bg-[#1D1E2F] w-full 
     text-white text-center">
       <div className="text-center pt-10 relative flex flex-col items-center p-5">
@@ -9,7 +14,7 @@ const App = () => {
         <p className="text-xs w-72">Empowering individuals through
           language learning, skills training, and career development.
         </p>
-      </div>
+      
       <div className="text-center flex flex-col">
         <div className="text-center pt-28 flex 
         flex-col md:flex-wrap md:flex-row">
@@ -57,7 +62,6 @@ const App = () => {
           </div>
         </div>
       </div>
-
     </div>
   );
 };
