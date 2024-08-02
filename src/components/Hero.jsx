@@ -8,9 +8,7 @@ import blurredIcon from '/icons/blurred-shape.svg';
 
 // Button Component | Must be seperated later
 const Button = ({ children, className }) => (
-  <button
-    className={`text-[10px] py-2 px-5 rounded-full ${className} lg:text-lg`}
-  >
+  <button className={`text-xs py-2 px-5 rounded-full ${className} lg:text-lg`}>
     {children}
   </button>
 );
@@ -63,7 +61,7 @@ function HeroSection() {
             alt=""
           />
 
-          <p className="text-[9.5px] mt-4 sm:text-sm md:text-lg text-gray-400">
+          <p className="text-[9.5px] mt-4 sm:text-sm md:text-lg text-gray-400 leading-5">
             Join our vibrant community of learners and access a wide range of{' '}
             <br />
             courses designed to inspire and empower you
