@@ -1,4 +1,12 @@
-import { unesco, who, netflix, garten, baby } from "../assets/index";
+import {
+  unesco,
+  who,
+  netflix,
+  garten,
+  baby,
+  manager,
+  employees,
+} from "../assets/index";
 
 export const navigation = [
   {
