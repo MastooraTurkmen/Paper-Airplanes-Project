@@ -5,8 +5,7 @@ const ScrollToTop = () => {
   const [isVisible, setIsVisible] = useState(false);
 
   // Toggle the scroll button visiblity
-  const toggleVisibility = (e) => {
-    e.preventDefault()
+  const toggleVisibility = () => {
     if (window.scrollY > 600) {
       setIsVisible(true);
     } else {
@@ -15,7 +14,8 @@ const ScrollToTop = () => {
   };
 
   // Scroll to top of the website
-  const scrollToTop = () => {
+  const scrollToTop = (e) => {
+    e.preventDefault()
     window.scrollTo({
       top: 0,
     });
