@@ -2,6 +2,7 @@ import Companies from './components/Companies';
 import Hero from './components/Hero';
 import Navbar from './components/Navbar';
 import OurPrograms from './components/Our-Programs';
+import Programs from './components/Programs';
 import ScrollToTop from './components/ScrollToTop';
 
 const App = () => {
@@ -11,6 +12,7 @@ const App = () => {
       <Hero />
       <Companies />
       <OurPrograms />
+      <Programs />
       <ScrollToTop />
     </div>
   );
