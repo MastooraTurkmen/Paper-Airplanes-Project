@@ -1,5 +1,5 @@
 import { programs } from "../constants/programs";
-import waves from '../../public/images/waves.png'
+import waves from '/images/waves.png'
 
 const OurPrograms = () => {
   return (
