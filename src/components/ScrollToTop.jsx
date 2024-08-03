@@ -20,8 +20,10 @@ const ScrollToTop = () => {
     });
   };
 
-  // Handle
+  // Handle scroll event
   useEffect(() => {
+    toggleVisibility();
+
     window.addEventListener('scroll', toggleVisibility);
     return () => {
       window.removeEventListener('scroll', toggleVisibility);
@@ -29,12 +31,13 @@ const ScrollToTop = () => {
   }, []);
 
   return (
-    <div>
+    <div className="z-[999]">
       {isVisible && (
         <img
           src={arrowUpIcon}
           className="w-10 cursor-pointer animate-bounce h-10 fixed bottom-4 right-4"
           onClick={scrollToTop}
+          alt="Scroll to top"
         />
       )}
     </div>
