@@ -14,9 +14,33 @@
 
 * {
   scroll-behavior: smooth;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 body {
   background-color: #1D1E2F;
 }
+
+/* Scroll bar customization */
+::-webkit-scrollbar {
+  width: 7px;
+  background: rgb(42, 51, 94);
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #fde047;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #fddf47cc;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  opacity: 0.7;
+}
+
