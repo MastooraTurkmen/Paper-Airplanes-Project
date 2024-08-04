@@ -30,7 +30,7 @@ This is a React project replicating the Paper Airplanes website. Paper Airplanes
 
 4. Start the development server:
    ```bash
-   npm start
+   npm run dev
    ```
 
 ## Contributing
