@@ -48,7 +48,7 @@ const Programs = () => {
               </div>
             </div>
             <div className='flex float-left flex-col mt-20 lg:gap-10 md:flex-row md:mx-12 md:text-center md:items-center'>
-                <div className='m-10 md:w-[500px] text-start mb-20 lg:order-2'>
+                <div className='m-10 md:w-[500px] text-start mb-20 md:order-2'>
                     <h2 className='mb-5 md:text-[35px] font-bold'>Women in Tech (WiT) Program</h2>
                     <p className='text-sm md:text-base'>
                       Our WiT program empowers female students with
@@ -59,7 +59,7 @@ const Programs = () => {
                 </div>
                 <div className="mx-10 relative">
                     <img
-                        className="rounded-xl md:w-[500px]"
+                        className="rounded-xl md:w-[500px] lg:w-[600px]"
                         src={WomanInTech}
                         alt="A Teacher is teaching her students"
                     />
