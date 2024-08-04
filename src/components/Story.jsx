@@ -1,6 +1,6 @@
 import React from "react";
 import { employees, manager, rect1, rect2 } from "../assets";
-import waves from '/images/waves.png'
+import waves from "/images/waves.png";
 
 const Story = () => {
   return (
