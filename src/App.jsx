@@ -6,6 +6,7 @@ import Story from './components/Story';
 import Programs from './components/Programs';
 import ScrollToTop from './components/ScrollToTop';
 import Testimonials from './components/Testimonials';
+import Footer from './components/Footer';
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
       <Programs />
       <Testimonials />
       <ScrollToTop />
+      <Footer />
     </div>
   );
 };
