@@ -15,6 +15,11 @@ import EnglishProgram from "./English-Prgram-Images/English-program.jpeg";
 import Woman from "./English-Prgram-Images/woman.jpeg";
 import WomanInTechStudents from "./English-Prgram-Images/women-in-tech-students.png";
 import WomanInTech from "./English-Prgram-Images/women-in-tech.jpeg";
+// Social Media Icons
+import facebook from "./social-media/facebook.svg";
+import instagram from "./social-media/instagram.svg";
+import linkedin from "./social-media/linkedin.svg";
+import  youtube from "./social-media/youtube.svg";
 
 export {
     baby,
@@ -31,5 +36,9 @@ export {
     EnglishTeacherChart,
     WomanInTechStudents,
     Woman,
-    WomanInTech
+    WomanInTech,
+    facebook,
+    instagram,
+    linkedin,
+    youtube
 }
