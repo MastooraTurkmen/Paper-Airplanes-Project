@@ -5,7 +5,7 @@ import {
 
 const Programs = () => {
   return (
-        <div className="text-white overflow-hidden pb-10 flex flex-col items-center">
+        <div className="text-white overflow-hidden pb-10 flex flex-col items-center" id="who-we-are">
             <div className="bg-[#E87900] w-16 h-16 
                 rounded-full mr-auto ml-[-48px] md:mb-[-120px] mb-[-90px]
                 md:w-20 md:h-20 md:ml-[-50px]"></div>
