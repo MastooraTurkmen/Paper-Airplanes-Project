@@ -8,7 +8,7 @@ const Footer = () => {
     {
       id: 0,
       title: "Home",
-      url: "#home",
+      url: "#hero",
     },
     {
       id: 1,
@@ -46,7 +46,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="flex justify-center items-center gap-3 mb-10 lg:gap-5">
+      <div className="flex justify-center items-center gap-3 mb-10 lg:gap-5" id="contact">
         {socials.map((social, index) => (
           <img
             src={social.src}
