@@ -4,7 +4,7 @@ import waves from '/images/waves.png'
 const OurPrograms = () => {
   return (
     <div className="w-full 
-    text-white text-center overflow-hidden">
+    text-white text-center overflow-hidden" id="programs">
       <div className="text-center pt-10 flex flex-col items-center p-5">
         <div className="bg-[#E87900] w-16 h-16 
         rounded-full ml-auto mr-[-48px] md:mb-[-90px] mb-[-50px]
