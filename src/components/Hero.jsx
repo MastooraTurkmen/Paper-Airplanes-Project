@@ -24,7 +24,7 @@ function HeroSection() {
   ];
 
   return (
-    <main className="bg-primary flex h-screen overflow-hidden">
+    <main className="bg-primary flex h-screen overflow-hidden" id='hero'>
       {/* Hero Content */}
       <section className="container mx-auto pt-40 px-2 text-center text-white relative">
         <img
