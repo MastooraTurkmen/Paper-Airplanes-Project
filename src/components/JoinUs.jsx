@@ -3,7 +3,7 @@ import girlStandingImg from '/images/girl-standing.png';
 
 const JoinUs = () => {
   return (
-    <section className="px-10 max-w-6xl mx-auto my-20">
+    <section className="px-10 max-w-6xl mx-auto my-20" id='join'>
       <div className="bg-[#252741] p-10 md:px-20 rounded-[50px] text-left sm:flex sm:flex-row-reverse justify-between items-center">
         <img
           src={girlStandingImg}
