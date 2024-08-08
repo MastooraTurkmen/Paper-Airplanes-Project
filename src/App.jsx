@@ -2,6 +2,7 @@ import Companies from './components/Companies';
 import Hero from './components/Hero';
 import Navbar from './components/Navbar';
 import OurPrograms from './components/Our-Programs';
+import OurImpact from './components/Our-Impact';
 import Story from './components/Story';
 import Programs from './components/Programs';
 import Testimonials from './components/Testimonials';
@@ -19,6 +20,7 @@ const App = () => {
       <OurPrograms />
       <Programs />
       <Programs2 />
+      <OurImpact />
       <Testimonials />
       <JoinUs />
       <Footer />
