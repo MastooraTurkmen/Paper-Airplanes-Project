@@ -88,7 +88,7 @@ function HeroSection() {
         </div>
 
         {/* Shapes */}
-        <div className="w-full relative -top-24 sm:-top-60 md:-top-96 z-10">
+        <div className="w-full relative -top-24 sm:-top-60 md:-top-96">
           <img
             src={wavesIcon}
             alt="waves"
