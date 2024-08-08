@@ -7,7 +7,7 @@ const Story = () => {
     <div className="text-xl bg-[#1D1E2F] relative z-10 overflow-hidden w-full flex flex-col justify-center mx-auto lg:px-20 px-10 py-10 mb-20 mt-[40px] md:mt-[70px]">
       <div
         className="bg-[#E87900] w-10 h-10 mr-[-50px]
-        rounded-full ml-auto md:mr-[-90px] lg:mr-[-120px] md:w-[100px] md:h-[100px]"
+        rounded-full ml-auto md:mr-[-90px] lg:mr-[-130px] md:w-[90px] md:h-[90px]"
       ></div>
       <div className="flex items-center justify-center mx-auto flex-wrap-reverse lg:flex-nowrap gap-3 relative">
         {/* Image Area */}
