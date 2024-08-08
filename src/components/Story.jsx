@@ -4,7 +4,8 @@ import waves from "/images/waves.png";
 
 const Story = () => {
   return (
-    <div className="text-xl bg-[#1D1E2F] relative z-10 overflow-hidden w-full flex flex-col justify-center mx-auto lg:px-20 px-10 py-10 mb-20 mt-[40px] md:mt-[70px]">
+    <div className="text-xl bg-[#1D1E2F] relative z-10 overflow-hidden w-full flex flex-col 
+    justify-center mx-auto lg:px-20 px-10 py-10 mb-20 mt-[40px] md:mt-[70px]">
       <div
         className="bg-[#E87900] w-10 h-10 mr-[-50px]
         rounded-full ml-auto md:mr-[-90px] lg:mr-[-130px] md:w-[90px] md:h-[90px]"
@@ -26,12 +27,12 @@ const Story = () => {
           </div>
         </div>
         {/* Story Content */}
-        <div className="content w-[370px]  md:w-[500px] h-auto lg:h-full p-4 pt-7 md:flex mx-auto relative text-white">
+        <div className="content w-[370px]  h-auto lg:h-full p-4 pt-7 md:flex mx-auto relative text-white">
           <div className="flex flex-col items-start gap-3">
-            <h1 className="text-[#E87900] md:text-lg text-md font-semibold">
+            <h1 className="text-[#E87900] md:text-2xl text-md font-semibold">
               Our Story
             </h1>
-            <p className="lg:text-3xl text-3xl text-start font-semibold mt-3 w-full">
+            <p className="lg:text-4xl text-3xl text-start font-semibold mt-3 w-full">
               From Refugee to Executive Director
             </p>
             <p className="md:text-sm text-xs mt-3 text-white/70 text-start w-full md:w-[400px]">
@@ -41,7 +42,8 @@ const Story = () => {
               journey positions him to guide Paper Airplanes into its next
               chapter.
             </p>
-            <button className="border-none rounded-full text-sm mt-3 px-5 py-2 bg-[#E87900]">
+            <button className="border-none rounded-full text-sm mt-3 px-5 py-2
+            md:px-7 md:py-4 md:text-[18px] bg-[#E87900]">
               Learn More
             </button>
           </div>
