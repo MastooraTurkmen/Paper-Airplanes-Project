@@ -33,11 +33,13 @@ const Footer = () => {
   ];
 
   return (
-    <div className="text-xl bg-[#1D1E2F] md:relative md:z-10 overflow-hidden w-full flex flex-col justify-center mx-auto lg:px-20 px-10 py-10 text-white">
+    <div className="text-xl bg-[#1D1E2F] md:relative md:z-10 overflow-hidden 
+    w-full flex flex-col justify-center mx-auto lg:px-20 px-10 py-10 text-white">
       <div className="main-headings flex flex-col gap-3 font-medium">
         <h1 className="text-xl">Paper Airplanes</h1>
         <div className="flex justify-center md:gap-5 flex-wrap md:flex-nowrap  items-center gap-3">
-          <div className="flex justify-between mb-10  w-[700px] items-center md:gap-7 flex-wrap md:flex-nowrap gap-[70px] text-lg lg:text-md ">
+          <div className="flex justify-between mb-10  w-[700px] items-center md:gap-7 flex-wrap 
+          md:flex-nowrap gap-[70px] text-lg lg:text-md ">
             {links.map((link, index) => (
               <a href={link.url} key={link.id}>
                 {link.title}
