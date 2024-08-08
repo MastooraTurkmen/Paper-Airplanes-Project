@@ -7,6 +7,7 @@ import Programs from './components/Programs';
 import Testimonials from './components/Testimonials';
 import Footer from './components/Footer';
 import JoinUs from './components/JoinUs';
+import Programs2 from './components/Programs2';
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
       <Story />
       <OurPrograms />
       <Programs />
+      <Programs2 />
       <Testimonials />
       <JoinUs />
       <Footer />
