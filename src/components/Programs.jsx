@@ -31,17 +31,17 @@ const Programs = () => {
               </div>
               <div className="mx-10 relative">
                   <img
-                      className="rounded-xl md:w-[500px]"
+                      className="rounded-xl border-white border-2  md:w-[500px]"
                       src={EnglishProgram}
                       alt="A Teacher is teaching her students"
                   />
                   <img
-                      className="w-36 rounded-xl lg:w-48 left-[-20px] top-[-30px] absolute"
+                      className="w-36 rounded-xl lg:w-52 left-[-20px] top-[-30px] absolute"
                       src={EnglishStudentChart}
                       alt="Number of English Tutors Chart"
                   />
                    <img
-                      className="w-36 rounded-xl lg:w-48 right-7 bottom-[-25px] absolute"
+                      className="w-36 rounded-xl lg:w-52 right-7 bottom-[-25px] absolute"
                       src={EnglishTeacherChart}
                       alt="Number of English Tutors Chart"
                   />
@@ -59,17 +59,17 @@ const Programs = () => {
                 </div>
                 <div className="mx-10 relative">
                     <img
-                        className="rounded-xl md:w-[500px] lg:w-[600px]"
+                        className="rounded-xl border-white border-2 md:w-[500px] lg:w-[600px]"
                         src={WomanInTech}
                         alt="A Teacher is teaching her students"
                     />
                     <img
-                        className="w-36 rounded-xl lg:w-48 right-[-20px] top-[-30px] absolute"
+                        className="w-36 rounded-xl lg:w-56 right-[-40px] top-[-30px] absolute"
                         src={WomanInTechStudents}
                         alt="Number of English Tutors Chart"
                     />
                     <img
-                        className="w-36 rounded-xl lg:w-48 left-[-15px] bottom-[-20px] absolute"
+                        className="w-36 border-white border-2 rounded-xl lg:w-72 left-[-15px] bottom-[-20px] absolute"
                         src={Woman}
                         alt="Number of English Tutors Chart"
                     />
