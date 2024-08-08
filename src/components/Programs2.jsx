@@ -46,7 +46,7 @@ function Programs2() {
             <div className='flex float-left flex-col mt-20 lg:gap-10 md:flex-row md:mx-12 md:text-center md:items-center'>
                 <div className='m-10 md:w-[500px] text-start mb-20'>
                     <h2 className='mb-5 md:text-[35px]'>Serving a Diverse Range of Nationalities</h2>
-                    <p className='text-sm md:text-base'>
+                    <p className='text-sm md:text-base text-[#F5F5F5]'>
                         Reflecting on our journey, from supporting Syrian students to reaching
                         global conflict-affected regions, we're inspired by our learners' resilience.
                         Our unwavering commitment to breaking barriers to education drives us forward,
