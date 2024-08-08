@@ -28,6 +28,10 @@ import facebook from "./social-media/facebook.svg";
 import instagram from "./social-media/instagram.svg";
 import linkedin from "./social-media/linkedin.svg";
 import youtube from "./social-media/youtube.svg";
+// Students
+import student1 from "./students/student1.png";
+import student2 from "./students/student2.png";
+import student3 from "./students/student3.png";
 
 export {
     baby,
@@ -53,5 +57,8 @@ export {
     facebook,
     instagram,
     linkedin,
-    youtube
+    youtube, 
+    student1,
+    student2,
+    student3
 }

@@ -10,6 +10,9 @@ import {
   linkedin,
   instagram,
   youtube,
+  student1,
+  student2,
+  student3,
 } from "../assets/index";
 
 export const navigation = [
@@ -73,6 +76,31 @@ export const companies = [
   },
 ];
 
+export const students = [
+  {
+    id: 1,
+    quote:
+      "The English program connects us with native speakers and students worldwide, fostering a diverse community where we learn from each other's knowledge and cultures through conversation groups.",
+    name: "Aisha Ali",
+    img: student1,
+  },
+  {
+    id: 2,
+    quote:
+      "Amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad miitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    name: "Aisha",
+    img: student2,
+  },
+  {
+    id: 3,
+    quote:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    name: "Ali Sajad",
+    img: student3,
+  },
+];
+
+
 export const testimonials = [
   {
     id: 1,
@@ -80,7 +108,7 @@ export const testimonials = [
       "Their dedication and expertise truly made a difference in my learning journey. Hamza was patient, supportive, and always went the extra mile to ensure I understood the concepts thoroughly.",
     name: "Thoufiq J.",
     role: "Student at Florida",
-    img: "https://media.istockphoto.com/id/1410538853/photo/young-man-in-the-public-park.webp?b=1&s=170667a&w=0&k=20&c=pGdjFVdK-_BhTa6PMy5VNcXdbxVNngzg-OPzMfJKrG8=",
+    img: "https://media.istockphoto.com/id/1413766112/photo/successful-mature-businessman-looking-at-camera-with-confidence.jpg?s=612x612&w=0&k=20&c=NJSugBzNuZqb7DJ8ZgLfYKb3qPr2EJMvKZ21Sj5Sfq4=",
   },
   {
     id: 2,
