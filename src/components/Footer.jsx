@@ -58,7 +58,7 @@ const Footer = () => {
       </div>
       <hr className="border-top-white/50" />
       <div className="mx-auto text-xs md:text-sm font-light mt-10">
-        <p>Copyright &copy; 2024 Paper Airplanes | EIN 81-4278267</p>
+        <p>Copyright &copy; {new Date().getFullYear()} Paper Airplanes | EIN 81-4278267</p>
         <p className="underline">Complaints</p>
       </div>
       <img
