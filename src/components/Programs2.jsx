@@ -20,21 +20,9 @@ function Programs2() {
                 </p>
             </div>
             <div className='flex float-left flex-col mt-20 lg:gap-10 md:flex-row md:mx-12 md:text-center md:items-center'>
-                  <div className="mx-10 relative">
-                  <img
-                      className="rounded-xl md:w-[500px]"
-                      src={FemaleStudents}
-                      alt="A Teacher is teaching her students"
-                  />
-                  <img
-                      className="w-36 rounded-xl lg:w-48 left-[-20px] top-[-30px] absolute"
-                      src={GenderDistribution}
-                      alt="Number of English Tutors Chart"
-                  />
-              </div>
-                <div className='m-10 md:w-[500px] text-start mb-20'>
+                <div className='m-10 md:w-[500px] text-start mb-20 md:order-2'>
                     <h2 className='mb-5 md:text-[35px]'>Empowering Female Student Growth</h2>
-                    <p className='text-xm md:text-base text-[#F5F5F5]'>
+                    <p className='text-sm md:text-base text-[#F5F5F5]'>
                         At Paper Airplanes, we've fostered an inclusive learning
                         environment for all genders in conflict-affected areas,
                         resulting in significant growth, especially among female students.
@@ -42,8 +30,20 @@ function Programs2() {
                         showcasing the rise in gender-inclusive participation over four years.
                     </p>
               </div>
+                  <div className="mx-10 relative">
+                  <img
+                      className="rounded-xl border-white border-2 md:w-[500px]"
+                      src={FemaleStudents}
+                      alt="A Teacher is teaching her students"
+                  />
+                  <img
+                      className="w-48 rounded-xl lg:w-60 left-[-20px] top-[-30px] absolute"
+                      src={GenderDistribution}
+                      alt="Number of English Tutors Chart"
+                  />
+              </div>
             </div>
-            <div className='flex float-left flex-col mt-20 lg:gap-10 md:flex-row md:mx-12 md:text-center md:items-center'>
+            <div className='flex mt-10 float-left flex-col lg:gap-10 md:flex-row md:mx-12 md:text-center md:items-center'>
                 <div className='m-10 md:w-[500px] text-start mb-20'>
                     <h2 className='mb-5 md:text-[35px]'>Serving a Diverse Range of Nationalities</h2>
                     <p className='text-sm md:text-base text-[#F5F5F5]'>
@@ -55,34 +55,34 @@ function Programs2() {
                 </div>
                 <div className="mx-10">
                     <img
-                        className="rounded-xl md:w-[500px] lg:w-[600px]"
+                        className="rounded-xl border-white border-2 md:w-[500px] lg:w-[600px]"
                         src={HandsTogether}
                         alt="A Teacher is teaching her students"
                     />
                 </div>
             </div>
             <div className='flex float-left flex-col mt-20 lg:gap-10 md:flex-row md:mx-12 md:text-center md:items-center'>
-                  <div className="mx-10 relative">
+                <div className='m-10 md:w-[500px] text-start mb-20 md:order-2'>
+                    <h2 className='mb-5 md:text-[35px]'>Bridging Educational Gaps Across Levels</h2>
+                    <p className='text-sm md:text-base text-[#F5F5F5]'>
+                        We're dedicated to harnessing education's transformative power
+                        across diverse levels, nurturing aspirations and creating
+                        opportunities for growth. From secondary school challenges
+                        to job-seeking graduates, Paper Airplanes empowers individuals
+                        at every educational and professional stage.
+                    </p>
+              </div>
+                <div className="mx-10 relative">
                   <img
-                      className="rounded-xl md:w-[500px]"
+                      className="rounded-xl md:w-[500px] border-white border-2"
                       src={StudentsUsingComputer}
                       alt="A Teacher is teaching her students"
                   />
                     <img
-                        className="w-36 rounded-xl lg:w-48 right-[-15px] bottom-[-20px] absolute"
+                        className="w-48 rounded-xl lg:w-60 right-[-15px] bottom-[-20px] absolute"
                         src={StudentsEducation}
                         alt="Number of English Tutors Chart"
                     />
-              </div>
-                <div className='m-10 md:w-[500px] text-start mb-20'>
-                    <h2 className='mb-5 md:text-[35px]'>Empowering Female Student Growth</h2>
-                    <p className='text-xm md:text-base text-[#F5F5F5]'>
-                        At Paper Airplanes, we've fostered an inclusive learning
-                        environment for all genders in conflict-affected areas,
-                        resulting in significant growth, especially among female students.
-                        Our commitment to equal opportunities is evident in the graph below,
-                        showcasing the rise in gender-inclusive participation over four years.
-                    </p>
               </div>
             </div>
         </div>
