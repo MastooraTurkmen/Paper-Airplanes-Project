@@ -4,7 +4,6 @@ import Navbar from './components/Navbar';
 import OurPrograms from './components/Our-Programs';
 import Story from './components/Story';
 import Programs from './components/Programs';
-import ScrollToTop from './components/ScrollToTop';
 import Testimonials from './components/Testimonials';
 import Footer from './components/Footer';
 import JoinUs from './components/JoinUs';
@@ -19,7 +18,6 @@ const App = () => {
       <OurPrograms />
       <Programs />
       <Testimonials />
-      <ScrollToTop />
       <JoinUs />
       <Footer />
     </div>

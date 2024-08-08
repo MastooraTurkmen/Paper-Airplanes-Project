@@ -6,6 +6,7 @@ import boxIcon from '/icons/box-shape.svg';
 import starIcon from '/icons/star.svg';
 import blurredIcon from '/icons/blurred-shape.svg';
 import Button from './Button';
+import ScrollToTop from './ScrollToTop';
 
 // InfoItem Component
 const InfoItem = ({ value, label }) => (
@@ -24,7 +25,7 @@ function HeroSection() {
   ];
 
   return (
-    <main className="bg-primary flex h-screen overflow-hidden" id='hero'>
+    <main className="bg-primary flex h-screen overflow-hidden" id="hero">
       {/* Hero Content */}
       <section className="container mx-auto pt-40 px-2 text-center text-white relative">
         <img
@@ -101,6 +102,7 @@ function HeroSection() {
           />
         </div>
       </section>
+      <ScrollToTop />
     </main>
   );
 }
