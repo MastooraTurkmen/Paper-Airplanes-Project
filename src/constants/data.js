@@ -7,7 +7,7 @@ export const people = [
     {
         id: 2,
         image: "https://media.istockphoto.com/id/1410538853/photo/young-man-in-the-public-park.webp?b=1&s=170667a&w=0&k=20&c=pGdjFVdK-_BhTa6PMy5VNcXdbxVNngzg-OPzMfJKrG8=",
-        text: 'Hala Jumma Gul, a dedicated English program student at Paper Airplanes, she Empowers women through technology education and career opportunities.'
+        text: 'Hala Jumma Gul, a dedicated English program student at Paper Airplanes, she Empowers women through technology education and career opportunities. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
     },
     {
         id: 3,
