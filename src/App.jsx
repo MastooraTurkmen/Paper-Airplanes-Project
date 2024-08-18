@@ -1,15 +1,18 @@
-import Companies from './components/Companies';
-import Hero from './components/Hero';
-import Navbar from './components/Navbar';
-import OurPrograms from './components/Our-Programs';
-import OurImpact from './components/Our-Impact';
-import Story from './components/Story';
-import Programs from './components/Programs';
-import Testimonials from './components/Testimonials';
-import Footer from './components/Footer';
-import JoinUs from './components/JoinUs';
-import Programs2 from './components/Programs2';
-import Students from './components/Students';
+import {
+  Companies,
+    Hero,
+    Navbar,
+    OurImpact,
+    OurPrograms,
+    Story,
+    Students,
+    Programs,
+    Programs2,
+    JoinUs,
+    Footer,
+  Testimonials,
+  Team
+} from "./components";
 
 const App = () => {
   return (
@@ -24,6 +27,7 @@ const App = () => {
       <OurImpact />
       <Students />
       <Testimonials />
+      <Team />
       <JoinUs />
       <Footer />
     </div>
