@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import { navigation } from '../constants';
-import { useLocation } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import Button from './Button';
 import menuIcon from '/icons/menu.svg';
 import closeIcon from '/icons/close.svg';
@@ -75,7 +75,7 @@ const Navbar = () => {
       {/* Register Button */}
       <div className="navbar-end">
         <Button className="bg-secondary lg:text-sm text-white hidden md:block">
-          Register
+          <Link to='/register' className='cursor-pointer'>Register</Link>
         </Button>
 
         <div
