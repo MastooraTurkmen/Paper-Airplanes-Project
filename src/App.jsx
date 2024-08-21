@@ -1,36 +1,50 @@
-import {
-  Companies,
-    Hero,
-    Navbar,
-    OurImpact,
-    OurPrograms,
-    Story,
-    Students,
-    Programs,
-    Programs2,
-    JoinUs,
-    Footer,
-  Testimonials,
-  Team
-} from "./components";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { Partners, About, Blog, ErrorPage, Join, Register, Program } from "./pages";
+import { HeroSection, Home } from "./components";
+
+
+// Create React Router and stored Pages
+const router = createBrowserRouter([
+  {
+    path: '/',
+    element: <Home />,
+    errorElement: <ErrorPage />,
+    children: [
+     {
+        index:true,
+        element: <HeroSection />,
+      },
+      {
+        path: 'about',
+        element: <About />,
+      },
+      {
+        path: 'blog',
+        element: <Blog />,
+      },
+      {
+        path: 'partners',
+        element: <Partners />,
+      },
+      {
+        path: 'join',
+        element: <Join />,
+      },
+      {
+        path: 'register',
+        element: <Register />,
+      },
+      {
+        path: 'programs',
+        element: <Program />,
+      }
+      ]
+    }
+])
 
 const App = () => {
   return (
-    <div className="text-3xl text-center">
-      <Navbar />
-      <Hero />
-      <Companies />
-      <Story />
-      <OurPrograms />
-      <Programs />
-      <Programs2 />
-      <OurImpact />
-      <Students />
-      <Testimonials />
-      <Team />
-      <JoinUs />
-      <Footer />
-    </div>
+    <RouterProvider router={router} />
   );
 };
 
