@@ -1,0 +1,7 @@
+export { default as About } from './AboutUs'
+export { default as Join } from './JoinUs'
+export { default as Blog } from './Blog'
+export { default as Program } from './OurPrograms'
+export { default as Partners } from './Partners'
+export { default as Register } from './Register'
+export { default as ErrorPage } from './ErrorPage'
