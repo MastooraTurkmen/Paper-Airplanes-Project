@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback } from 'react';
+import { useState, useEffect } from 'react';
 import { navigation } from '../constants';
 import { Link, useLocation } from 'react-router-dom';
 import Button from './Button';
@@ -25,21 +25,17 @@ const Navbar = () => {
   };
 
   {
-    /* Handle Scroll effect */
-  }
-  const handleScroll = () => {
-    setScrolled(window.scrollY > 50);
-  };
-
-  {
     /* Handle window scroll event  */
   }
   useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 50);
+    };
     window.addEventListener('scroll', handleScroll);
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
-  }, [handleScroll]);
+  }, []);
 
   const navLinkClass = (url) =>
     `overflow-hidden ${
@@ -54,9 +50,12 @@ const Navbar = () => {
     >
       {/* Logo */}
       <div className="navbar-start z-20">
-        <a className="text-white text-lg lg:text-xl font-semibold ml-2">
+        <Link
+          to="/"
+          className="text-white text-lg lg:text-xl font-semibold ml-2"
+        >
           Paper Airplanes
-        </a>
+        </Link>
       </div>
 
       {/* Desktop menu */}
@@ -64,9 +63,9 @@ const Navbar = () => {
         <ul className="menu menu-horizontal px-1">
           {navigation.map((item) => (
             <li key={item.id}>
-              <a href={item.url} className={navLinkClass(item.url)}>
+              <Link to={item.url} className={navLinkClass(item.url)}>
                 {item.title}
-              </a>
+              </Link>
             </li>
           ))}
         </ul>
@@ -75,7 +74,9 @@ const Navbar = () => {
       {/* Register Button */}
       <div className="navbar-end">
         <Button className="bg-secondary lg:text-sm text-white hidden md:block">
-          <Link to='/register' className='cursor-pointer'>Register</Link>
+          <Link to="/register" className="cursor-pointer">
+            Register
+          </Link>
         </Button>
 
         <div
@@ -96,13 +97,13 @@ const Navbar = () => {
           <ul className="flex flex-col w-full px-10 gap-6">
             {navigation.map((item) => (
               <li key={item.id}>
-                <a
+                <Link
                   onClick={handleCloseMenu}
-                  href={item.url}
+                  to={item.url}
                   className={`text-lg ${navLinkClass(item.url)}`}
                 >
                   {item.title}
-                </a>
+                </Link>
               </li>
             ))}
             <Button className="bg-secondary text-white !text-lg w-full">
