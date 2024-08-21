@@ -19,32 +19,32 @@ export const navigation = [
   {
     id: "0",
     title: "Home",
-    url: "#hero",
+    url: "/",
   },
   {
     id: "1",
     title: "Who We Are",
-    url: "#who-we-are",
+    url: "/about",
   },
   {
     id: "2",
     title: "Our Programs",
-    url: "#programs",
+    url: "/programs",
   },
   {
     id: "3",
     title: "Join Us",
-    url: "#join",
+    url: "/join",
   },
   {
     id: "4",
     title: "Partners",
-    url: "#partners",
+    url: "/partners",
   },
   {
     id: "5",
     title: "Blog",
-    url: "#blog",
+    url: "/blog",
   },
 ];
 
