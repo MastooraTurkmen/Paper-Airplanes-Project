@@ -13,8 +13,8 @@ function Programs2() {
             rounded-full ml-auto mr-[-48px] md:mb-[-90px] mb-[-50px]
             md:w-20 md:h-20 md:mr-[-40px]"></div>
             <div className="pt-20 flex flex-col items-center p-5">
-                <h1 className="text-3xl pb-5 md:text-5xl">Diversity, Equity, and Inclusion</h1>
-                <p className="text-xs w-72 md:text-base text-[#F5F5F5] md:w-[500px]">
+                <h1 className="text-3xl text-center pb-5 md:text-5xl">Diversity, Equity, and Inclusion</h1>
+                <p className="text-xs w-72 text-center md:text-base text-[#F5F5F5] md:w-[500px]">
                     Building a Unified Community:
                     Diversity, Equity, and Inclusion at the Heart of Our Mission
                 </p>
