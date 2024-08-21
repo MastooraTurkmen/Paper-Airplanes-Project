@@ -5,25 +5,25 @@ import {
 
 const Programs = () => {
   return (
-        <div className="text-white overflow-hidden pb-10 flex flex-col items-center" id="who-we-are">
+        <div className="text-white overflow-hidden pb-10 flex flex-col items-center">
             <div className="bg-[#E87900] w-16 h-16 
                 rounded-full mr-auto ml-[-48px] md:mb-[-120px] mb-[-90px]
                 md:w-20 md:h-20 md:ml-[-50px]"></div>
             <div className="pt-20 flex flex-col items-center p-5">
-                <h1 className="text-3xl font-bold pb-5 md:text-5xl">Impactful Growth Over the Years</h1>
-                <p className="text-xs w-72 md:text-base text-[#F5F5F5] md:w-[500px]">Discover our impactful growth story,
+                <h1 className="text-3xl font-bold text-center pb-5 md:text-5xl">Impactful Growth Over the Years</h1>
+                <p className="text-xs w-72 md:text-base text-center text-[#F5F5F5] md:w-[500px]">Discover our impactful growth story,
                     from humble beginnings to transformative achievements.
                 </p>
             </div>
             <div className='flex float-left flex-col mt-20 lg:gap-10 md:flex-row md:mx-12 md:text-center md:items-center'>
                 <div className='m-10 md:w-[500px] text-start mb-20'>
-                    <h2 className='mb-5 md:text-[35px]'>English Program</h2>
+                    <h2 className='mb-5 md:text-[35px] text-2xl'>English Program</h2>
                     <p className='text-sm md:text-base text-[#F5F5F5]'>Our growth transforms lives through education
                         and skills development. In 2023, we reached 3,229
                         students, starting from age 13,
                         with over 900 new and returning students.
                     </p>
-                    <p className='text-sm font-bold my-5 text-[#F5F5F5]'>1:1 and Speaking Classes Programs</p>
+                    <p className='text-xl my-5 text-[#F5F5F5]'>1:1 and Speaking Classes Programs</p>
                     <p className='text-sm md:text-base text-[#F5F5F5]'>Each student is matched with a tutor in the 1:1
                         program, while 3-5 students are assigned to a
                         tutor in Speaking Classes. Since 2014, 4,245
