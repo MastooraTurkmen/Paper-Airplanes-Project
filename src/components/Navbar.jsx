@@ -59,8 +59,8 @@ const Navbar = () => {
       </div>
 
       {/* Desktop menu */}
-      <div className="navbar-center hidden md:flex">
-        <ul className="menu menu-horizontal px-1">
+      <div className=" w-full md:flex items-center justify-center hidden">
+        <ul className="text-[15px] flex justify-between items-center gap-5 px-1">
           {navigation.map((item) => (
             <li key={item.id}>
               <Link to={item.url} className={navLinkClass(item.url)}>
