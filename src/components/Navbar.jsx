@@ -1,9 +1,28 @@
-import { useState, useEffect } from 'react';
-import { navigation } from '../constants';
-import { Link, useLocation } from 'react-router-dom';
-import Button from './Button';
-import menuIcon from '/icons/menu.svg';
-import closeIcon from '/icons/close.svg';
+import { useState, useEffect } from "react";
+import { navigation } from "../constants";
+import { Link, useLocation } from "react-router-dom";
+import Button from "./Button";
+import menuIcon from "/icons/menu.svg";
+import closeIcon from "/icons/close.svg";
+import { motion } from "framer-motion";
+
+const container = (delay) => ({
+  hidden: { x: -100, opacity: 0 },
+  visible: {
+    x: 0,
+    opacity: 1,
+    transition: { duration: 1, delay: delay },
+  },
+});
+
+const elements = (delay) => ({
+  hidden: { y: -50, opacity: 0 },
+  visible: {
+    y: 0,
+    opacity: 1,
+    transition: { duration: 0.3, delay: delay },
+  },
+});
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -31,49 +50,64 @@ const Navbar = () => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 50);
     };
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
   const navLinkClass = (url) =>
     `overflow-hidden ${
-      url === pathname.pathname ? 'text-white' : 'text-white/70'
+      url === pathname.pathname ? "text-white" : "text-white/70"
     }`;
 
   return (
     <header
       className={`navbar border-gray-800 w-full lg:px-16 flex justify-between items-center fixed z-[999] transition-colors duration-300 ${
-        scrolled ? 'bg-primary border-b' : 'bg-transparent'
+        scrolled ? "bg-primary border-b" : "bg-transparent"
       }`}
     >
       {/* Logo */}
-      <div className="navbar-start z-20">
+      <motion.div
+        variants={container(0)}
+        initial="hidden"
+        animate="visible"
+        className="navbar-start z-20"
+      >
         <Link
           to="/"
           className="text-white text-lg lg:text-xl font-semibold ml-2"
         >
           Paper Airplanes
         </Link>
-      </div>
+      </motion.div>
 
       {/* Desktop menu */}
       <div className=" w-full md:flex items-center justify-center hidden">
         <ul className="text-[15px] flex justify-between items-center gap-5 px-1">
-          {navigation.map((item) => (
-            <li key={item.id}>
+          {navigation.map((item, i) => (
+            <motion.li
+              key={item.id}
+              variants={elements(0.3 * i)}
+              initial="hidden"
+              animate="visible"
+            >
               <Link to={item.url} className={navLinkClass(item.url)}>
                 {item.title}
               </Link>
-            </li>
+            </motion.li>
           ))}
         </ul>
       </div>
 
       {/* Register Button */}
-      <div className="navbar-end">
-        <Button className="bg-secondary lg:text-sm text-white hidden md:block">
+      <motion.div
+        initial={{ x: 100, opacity: 0 }}
+        animate={{ x: 0, opacity: 1 }}
+        transition={{ duration: 1, delay: 1.2 }}
+        className="navbar-end"
+      >
+        <Button className="bg-secondary lg:text-sm hover:border hover:border-orange-500 hover:bg-transparent font-semibold transition duration-500 text-white hidden md:block">
           <Link to="/register" className="cursor-pointer">
             Register
           </Link>
@@ -86,10 +120,10 @@ const Navbar = () => {
         >
           <img
             src={menuOpen ? closeIcon : menuIcon}
-            alt={menuOpen ? 'Close menu' : 'Open menu'}
+            alt={menuOpen ? "Close menu" : "Open menu"}
           />
         </div>
-      </div>
+      </motion.div>
 
       {/* Mobile Menu */}
       {menuOpen && (
