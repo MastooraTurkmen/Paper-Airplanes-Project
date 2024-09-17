@@ -4,8 +4,6 @@ import {
   netflix,
   garten,
   baby,
-  manager,
-  employees,
   facebook,
   linkedin,
   instagram,
