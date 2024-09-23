@@ -39,6 +39,8 @@ Contributions are welcome! Please fork the repository and submit a pull request 
 
 <img src="https://contributors-img.web.app/image?repo=mastooraturkmen/paper-airplanes-project" alt="Contributors"/>
 
+---
+
 ## Acknowledgements
 
 - Inspired by the [Paper Airplanes](https://www.paper-airplanes.org/) organization.
