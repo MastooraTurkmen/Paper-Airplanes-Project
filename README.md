@@ -34,10 +34,11 @@ This is a React project replicating the Paper Airplanes website. Paper Airplanes
    ```
 
 ## Contributing
-
-Contributions are welcome! Please fork the repository and submit a pull request for review.
+Huge thanks to these guys for spending their time helping Paper Airplanes Project grow. They rock! ⚡️
 
 <img src="https://contributors-img.web.app/image?repo=mastooraturkmen/paper-airplanes-project" alt="Contributors"/>
+
+Contributions are welcome! Please fork the repository and submit a pull request for review.
 
 ---
 
