@@ -2,6 +2,8 @@
 
 This is a React project replicating the Paper Airplanes website. Paper Airplanes is a nonprofit organization that provides free, virtual education and professional training to individuals affected by conflict.
 
+[Live](https://online-programming-coures.netlify.app/)
+
 ## Tech Stack
 
 - **React**: JavaScript library for building user interfaces
@@ -34,6 +36,7 @@ This is a React project replicating the Paper Airplanes website. Paper Airplanes
    ```
 
 ## Contributing
+
 Huge thanks to these guys for spending their time helping Paper Airplanes Project grow. They rock! ⚡️
 
 <img src="https://contributors-img.web.app/image?repo=mastooraturkmen/paper-airplanes-project" alt="Contributors"/>
